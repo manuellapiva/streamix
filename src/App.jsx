@@ -4,11 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Filmes from "./pages/Filmes";
 import Detalhes from "./components/Detalhes";
 import Favoritos from './pages/Favoritos'
-import Sobre from './pages/Sobre'
 import Home from './pages/Home'
 import Contato from './pages/Contato'
 import Equipe from './pages/Equipe'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 export default function App() {
   const [favoritos, setFavoritos] = useState(() => {
@@ -37,16 +37,13 @@ export default function App() {
   return (
     <BrowserRouter>
 
+    <Header/>
+
       <Routes>
 
         <Route
           path="/"
           element={<Home/>}
-        />
-
-        <Route
-          path="/sobre"
-          element={<Sobre/>}
         />
 
         <Route
@@ -77,6 +74,11 @@ export default function App() {
               toggleFavorite={toggleFavorite}
             />
           }
+        />
+
+        <Route
+          path="/sobre"
+          element={<Sobre/>}
         />
 
         <Route
