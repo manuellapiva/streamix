@@ -5,43 +5,44 @@ import manuella from "../assets/manupiva.PNG";
 import maria from "../assets/maria.PNG";
 
 export default function Equipe() {
-    const equipe = [
-  {
-    name: "Ayla Vilela",
-    cargo: "DESIGNER",
-    image: ayla,
-  },
-  {
-    name: "Gustavo Milamonte",
-    cargo: "DESENVOLVEDOR",
-    image: gustavo,
-  },
-  {
-    name: "Gabriela Camacho",
-    cargo: "DESIGNER",
-    image: gabriela,
-  },
-  {
-    name: "Manuella Piva",
-    cargo: "DESENVOLVEDORA",
-    image: manuella,
-  },
-  {
-    name: "Maria Vitória Guedes",
-    cargo: "DESENVOLVEDORA",
-    image: maria,
-  },
-];
+  const equipe = [
+    {
+      name: "Ayla Vilela",
+      cargo: "DESIGNER",
+      image: ayla,
+    },
+    {
+      name: "Gustavo Milamonte",
+      cargo: "DESENVOLVEDOR",
+      image: gustavo,
+    },
+    {
+      name: "Gabriela Camacho",
+      cargo: "DESIGNER",
+      image: gabriela,
+    },
+    {
+      name: "Manuella Piva",
+      cargo: "DESENVOLVEDORA",
+      image: manuella,
+    },
+    {
+      name: "Maria Vitória Guedes",
+      cargo: "DESENVOLVEDORA",
+      image: maria,
+    },
+  ];
 
-     return (
-    <section className="min-h-screen bg-[#08090e] px-8 py-16">
-
+  return (
+    <section className="min-h-screen bg-[#08090e] px-8 py-16 font-serif">
+      
+      {/* INTRODUÇÃO */}
       <div className="max-w-3xl mx-auto text-center">
         <span className="text-blue-500 text-xs font-bold tracking-[3px]">
           AS PESSOAS POR TRÁS
         </span>
 
-        <h1 className="text-5xl font-bold text-white mt-5">
+        <h1 className="text-5xl font-bold font-serif text-white mt-5">
           Nossa equipe
         </h1>
 
@@ -52,7 +53,8 @@ export default function Equipe() {
         </p>
       </div>
 
-            <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* EQUIPE */}
+      <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
         {equipe.map((item, index) => (
           <div
             key={index}
@@ -66,8 +68,8 @@ export default function Equipe() {
               />
             </div>
 
-          <div className="p-6">
-              <h2 className="text-xl font-bold text-white">
+            <div className="p-6">
+              <h2 className="text-xl font-bold font-serif text-white">
                 {item.name}
               </h2>
 
@@ -78,6 +80,8 @@ export default function Equipe() {
           </div>
         ))}
       </div>
+
+      {/* VALORES */}
       <div className="max-w-6xl mx-auto mt-28">
 
         <div className="text-center mb-14">
@@ -85,7 +89,7 @@ export default function Equipe() {
             O QUE NOS GUIA
           </span>
 
-          <h2 className="text-4xl font-bold text-white mt-4">
+          <h2 className="text-4xl font-bold font-serif text-white mt-4">
             Nossos valores
           </h2>
         </div>
@@ -95,7 +99,7 @@ export default function Equipe() {
           <div className="p-8 border-b md:border-b-0 md:border-r border-[#292a35]">
             <div className="w-8 h-[1px] bg-blue-500 mb-7"></div>
 
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="text-lg font-bold font-serif text-white">
               Honestidade editorial
             </h3>
 
@@ -108,7 +112,7 @@ export default function Equipe() {
           <div className="p-8 border-b md:border-b-0 md:border-r border-[#292a35]">
             <div className="w-8 h-[1px] bg-blue-500 mb-7"></div>
 
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="text-lg font-bold font-serif text-white">
               Diversidade de olhares
             </h3>
 
@@ -121,7 +125,7 @@ export default function Equipe() {
           <div className="p-8">
             <div className="w-8 h-[1px] bg-blue-500 mb-7"></div>
 
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="text-lg font-bold font-serif text-white">
               Experiência primeiro
             </h3>
 
@@ -133,10 +137,11 @@ export default function Equipe() {
 
         </div>
 
+        {/* ESTATÍSTICAS */}
         <div className="max-w-5xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 bg-[#15151f] border border-[#292a35]">
 
           <div className="text-center py-8 px-4 border-r border-b md:border-b-0 border-[#292a35]">
-            <h3 className="text-3xl font-bold text-blue-500">
+            <h3 className="text-3xl font-bold font-serif text-blue-500">
               2022
             </h3>
 
@@ -146,7 +151,7 @@ export default function Equipe() {
           </div>
 
           <div className="text-center py-8 px-4 border-b md:border-b-0 md:border-r border-[#292a35]">
-            <h3 className="text-3xl font-bold text-blue-500">
+            <h3 className="text-3xl font-bold font-serif text-blue-500">
               6
             </h3>
 
@@ -156,7 +161,7 @@ export default function Equipe() {
           </div>
 
           <div className="text-center py-8 px-4 border-r border-[#292a35]">
-            <h3 className="text-3xl font-bold text-blue-500">
+            <h3 className="text-3xl font-bold font-serif text-blue-500">
               12+
             </h3>
 
@@ -166,7 +171,7 @@ export default function Equipe() {
           </div>
 
           <div className="text-center py-8 px-4">
-            <h3 className="text-3xl font-bold text-blue-500">
+            <h3 className="text-3xl font-bold font-serif text-blue-500">
               100%
             </h3>
 
