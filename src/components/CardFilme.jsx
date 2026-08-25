@@ -1,4 +1,5 @@
 import { FiHeart } from "react-icons/fi";
+import { FaStar, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function CardFilme({ movie, isFavorite, onToggleFavorite }) {
@@ -12,7 +13,7 @@ export default function CardFilme({ movie, isFavorite, onToggleFavorite }) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80" />
         <span className="absolute left-3 top-3 z-10 rounded border border-[#244d86] bg-[#101923] px-2 py-1 text-xs text-blue-400">
-          ★ {movie.rating}
+          <FaStar size={12} /> {movie.rating}
         </span>
 
         <button
@@ -36,9 +37,9 @@ export default function CardFilme({ movie, isFavorite, onToggleFavorite }) {
 
         <Link
           to={`/filme/${movie.id}`}
-          className="absolute bottom-3 left-3 z-10 translate-y-2 font-mono text-[11px] font-bold text-blue-400 opacity-0 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
+          className="absolute flex items-center gap-5px bottom-3 left-3 z-10 translate-y-2 font-mono text-[11px] font-bold text-blue-400 opacity-0 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
         >
-          VER DETALHES →
+          VER DETALHES <FaArrowRight size={12} />
         </Link>
       </div>
 

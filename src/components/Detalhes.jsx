@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { FiArrowLeft, FiHeart } from "react-icons/fi";
+import { FaStar } from "react-icons/fa";
 import movies from "../data/filmes";
 
 export default function Detalhes({ favorites, toggleFavorite }) {
@@ -63,8 +64,12 @@ export default function Detalhes({ favorites, toggleFavorite }) {
             </h1>
 
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-gray-500">
-              <span className="tracking-[2px] text-blue-500">
-                ★★★★★
+              <span className="flex items-center gap-2px tracking-[2px] text-blue-500">
+                    <FaStar size={12} />
+                    <FaStar size={12} />
+                    <FaStar size={12} />
+                    <FaStar size={12} />
+                    <FaStar size={12} />
               </span>
               <strong className="text-blue-400">
                 {movie.rating}

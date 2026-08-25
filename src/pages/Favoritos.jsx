@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FiHeart } from 'react-icons/fi'
 import MovieCard from "../components/CardFilme";
 import movies from "../data/filmes";
 
@@ -36,7 +37,7 @@ export default function Favoritos({ favorites, toggleFavorite }) {
         ) : (
           <section className="flex min-h-[500px] flex-col items-center justify-center text-center">
             <div className="rounded-full border border-[#292938] bg-[#12121a] px-5 py-3 text-2xl">
-              ♡
+              <FiHeart size={17}/>
             </div>
             <h2 className="mt-5 font-serif text-2xl text-gray-200">
               Sua coleção está vazia

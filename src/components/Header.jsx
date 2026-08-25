@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaFilm } from "react-icons/fa6";
+import { FaFilm, FaBars } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -109,7 +109,7 @@ export default function Header() {
           className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-800 text-zinc-400 transition hover:border-blue-500 hover:text-blue-500 md:hidden"
           aria-label="Abrir menu"
         >
-          ☰
+          <FaBars/>
         </button>
 
       </div>
