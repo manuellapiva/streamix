@@ -1,72 +1,116 @@
-import {
-  FaFilm,
-} from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
+import { FaFilm } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-50 h-8 w-full border-b border-zinc-800 bg-zinc-950">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-md">
       
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-5">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
 
         {/* LOGO */}
-        <div className="flex items-center gap-1">
-
-          <div className="flex h-4 w-4 items-center justify-center rounded-sm bg-blue-500">
-            <FaFilm className="text-xs text-zinc-950" />
+        <NavLink
+          to="/"
+          className="flex items-center gap-2"
+        >
+          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-blue-500">
+            <FaFilm className="text-sm text-zinc-950" />
           </div>
 
-          <span className="text-xs font-bold">
+          <span className="text-lg font-bold tracking-tight text-white">
             Streamix
           </span>
+        </NavLink>
 
-        </div>
 
         {/* MENU */}
-        <nav className="flex items-center gap-6">
+        <nav className="hidden items-center gap-7 md:flex">
 
-          <a
-            href="#inicio"
-            className="text-xs text-zinc-500 transition hover:text-blue-500"
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Home
-          </a>
+          </NavLink>
 
-          <a
-            href="#filmes"
-            className="text-xs text-zinc-500 transition hover:text-blue-500"
+          <NavLink
+            to="/filme"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Filmes
-          </a>
+          </NavLink>
 
-          <a
-            href="#favoritos"
-            className="text-xs text-zinc-500 transition hover:text-blue-500"
+          <NavLink
+            to="/favoritos"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Favoritos
-          </a>
+          </NavLink>
 
-          <a
-            href="#sobre"
-            className="text-xs text-blue-500"
+          <NavLink
+            to="/sobre"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Sobre
-          </a>
+          </NavLink>
 
-          <a
-            href="#equipe"
-            className="text-xs text-zinc-500 transition hover:text-blue-500"
+          <NavLink
+            to="/equipe"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Equipe
-          </a>
+          </NavLink>
 
-          <a
-            href="#contato"
-            className="text-xs text-zinc-500 transition hover:text-blue-500"
+          <NavLink
+            to="/contato"
+            className={({ isActive }) =>
+              `text-sm transition ${
+                isActive
+                  ? "font-medium text-blue-500"
+                  : "text-zinc-400 hover:text-blue-500"
+              }`
+            }
           >
             Contato
-          </a>
+          </NavLink>
 
         </nav>
+
+        <button
+          className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-800 text-zinc-400 transition hover:border-blue-500 hover:text-blue-500 md:hidden"
+          aria-label="Abrir menu"
+        >
+          ☰
+        </button>
 
       </div>
 
