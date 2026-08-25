@@ -8,6 +8,7 @@ import Sobre from './pages/Sobre'
 import Home from './pages/Home'
 import Contato from './pages/Contato'
 import Equipe from './pages/Equipe'
+import Footer from './components/Footer'
 
 export default function App() {
   const [favoritos, setFavoritos] = useState(() => {
@@ -88,6 +89,7 @@ export default function App() {
           element={<Equipe/>}
         />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
