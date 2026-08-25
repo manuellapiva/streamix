@@ -12,7 +12,7 @@ function Contato() {
       <div className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-24">
         <section className="contact-content" aria-labelledby="contact-title">
           <p className="mb-5 text-sm font-bold tracking-[0.28em] text-cyan-400">FALE CONOSCO</p>
-          <h1 id="contact-title" className="max-w-lg text-4xl font-black tracking-tight text-white sm:text-5xl">
+          <h1 id="contact-title" className="max-w-lg font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Entre em contato
           </h1>
           <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
