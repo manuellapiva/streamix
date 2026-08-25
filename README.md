@@ -89,13 +89,13 @@
 
  ## 👥 Autores - Grupo 2
 
- 🙅‍♀️ Ayla Cristina da Silva Vilela
- 😘 Gabriella Camacho Stavarengo
- 😜 Gustavo Millamonte
- 😻 Manuella da Silva Piva
+ 🙅‍♀️ Ayla Cristina da Silva Vilela <br>
+ 😘 Gabriella Camacho Stavarengo <br>
+ 😜 Gustavo Millamonte <br>
+ 😻 Manuella da Silva Piva <br>
  🙄 Maria Vitória Guedes Ferreira
 
  ## 👨‍🏫 Professores - SENAI
 
- 👨‍💻 Leandro Grosso
+ 👨‍💻 Leandro Grosso <br>
  👨‍💻 Eduardo Correia
