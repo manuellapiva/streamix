@@ -1,16 +1,101 @@
-# React + Vite
+ # 🎬 Streamix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Streamix é uma aplicação web para explorar um catálogo de filmes. É possível pesquisar títulos, filtrar por gênero, ordenar os resultados, consultar detalhes e salvar filmes favoritos para acessá-los depois.
 
-Currently, two official plugins are available:
+ ## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ - Catálogo com filmes, notas, gêneros, duração, ano e descrição.
+ - Busca de filmes pelo título.
+ - Filtro por gênero.
+ - Ordenação por relevância, melhor nota, lançamento mais recente ou ordem alfabética.
+ - Página de detalhes para cada filme.
+ - Lista de favoritos com persistência no navegador usando `localStorage`.
+ - Páginas institucionais de início, sobre, equipe e contato.
+ - Formulário de contato com validação usando React Hook Form e Zod.
+ - Layout responsivo para diferentes tamanhos de tela.
 
-## React Compiler
+ ## 🛠️ Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ - React 19
+ - Vite
+ - React Router
+ - Tailwind CSS
+ - React Icons
+ - React Hook Form
+ - Zod
+ - ESLint
 
-## Expanding the ESLint configuration
+ ## 🚀 Como executar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ ### 📋 Pré-requisitos
+
+ - Node.js instalado.
+ - npm instalado.
+
+ ### 📦 Instalação
+
+ Clone o repositório, entre na pasta do projeto e instale as dependências:
+
+ ```bash
+ npm install
+ ```
+
+ Inicie o servidor de desenvolvimento:
+
+ ```bash
+ npm run dev
+ ```
+
+ Depois, abra no navegador o endereço exibido pelo Vite, normalmente `http://localhost:5173`.
+
+ ## 📜 Scripts disponíveis
+
+ | Comando | Descrição |
+ | --- | --- |
+ | `npm run dev` | Inicia o servidor de desenvolvimento com atualização automática. |
+ | `npm run build` | Gera a versão otimizada para produção. |
+ | `npm run preview` | Executa uma prévia da build de produção. |
+ | `npm run lint` | Verifica problemas de código com ESLint. |
+
+ ## 🧭 Rotas
+
+ | Rota | Página |
+ | --- | --- |
+ | `/` | Página inicial |
+ | `/filme` | Catálogo de filmes |
+ | `/filme/:id` | Detalhes de um filme |
+ | `/favoritos` | Filmes favoritos |
+ | `/sobre` | Sobre o Streamix |
+ | `/contato` | Formulário de contato |
+ | `/equipe` | Equipe do projeto |
+
+ ## 📁 Estrutura do projeto
+
+ ```text
+ src/
+ ├── App.jsx                  # Rotas e estado global de favoritos
+ ├── index.css                # Estilos globais
+ ├── main.jsx                 # Ponto de entrada da aplicação
+ ├── assets/                  # Imagens dos filmes
+ ├── components/              # Componentes reutilizáveis
+ ├── data/filmes.js           # Dados estáticos do catálogo
+ ├── pages/                   # Páginas acessíveis pelas rotas
+ └── schemas/                 # Schemas de validação dos formulários
+ ```
+
+ ## 💡 Observações
+
+ Os dados dos filmes são estáticos e ficam em `src/data/filmes.js`. Os favoritos são armazenados localmente no navegador; por isso, eles não são compartilhados entre dispositivos ou navegadores diferentes.
+
+ ## 👥 Autores - Grupo 2
+
+ 🙅‍♀️ Ayla Cristina da Silva Vilela
+ 😘 Gabriella Camacho Stavarengo
+ 😜 Gustavo Millamonte
+ 😻 Manuella da Silva Piva
+ 🙄 Maria Vitória Guedes Ferreira
+
+ ## 👨‍🏫 Professores - SENAI
+
+ 👨‍💻 Leandro Grosso
+ 👨‍💻 Eduardo Correia
