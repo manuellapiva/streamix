@@ -33,64 +33,21 @@ export default function Equipe() {
   },
 ];
 
-    return (
-    <>
-      <style>{`
-            * {
-          box-sizing: border-box;
-        }
+     return (
+    <section className="min-h-screen bg-[#08090e] px-8 py-16">
 
-        body {
-          margin: 0;
-          background: #08090e;
-          color: #ffffff;
-          font-family: Arial, Helvetica, sans-serif;
-        }
+      <div className="max-w-3xl mx-auto text-center">
+        <span className="text-blue-500 text-xs font-bold tracking-[3px]">
+          AS PESSOAS POR TRÁS
+        </span>
 
-        .equipe-page {
-          min-height: 100vh;
-          background: #08090e;
-          padding: 70px 40px 90px;
-        }
-          .equipe-intro {
-          max-width: 720px;
-          margin: 0 auto;
-          text-align: center;
-        }
+        <h1 className="text-5xl font-bold text-white mt-5">
+          Nossa equipe
+        </h1>
 
-        .equipe-subtitulo {
-          display: block;
-          margin-bottom: 24px;
-          color: #4d91ff;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 2.5px;
-        }
-
-        .equipe-title {
-          margin: 0;
-          color: #f3f3f7;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 58px;
-          line-height: 1.05;
-          font-weight: 700;
-        }
-
-        .equipe-description {
-          max-width: 500px;
-          margin: 28px auto 0;
-          color: #aeb9d8;
-          font-size: 16px;
-          line-height: 1.6;
-        }
-    
-          .equipe-cards {
-          width: 100%;
-          max-width: 1150px;
-          margin: 68px auto 0;
-
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 24px;
-        }
-
+        <p className="text-gray-400 mt-6 text-base leading-7">
+          Um grupo pequeno e obcecado por cinema, design e tecnologia.
+          Construímos o Streamix porque queríamos uma plataforma que
+          tratasse filmes com a seriedade que eles merecem.
+        </p>
+      </div>
