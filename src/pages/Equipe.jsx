@@ -7,27 +7,27 @@ import maria from "./assets/maria.PNG";
 export default function Equipe() {
     const equipe = [
   {
-    nome: "Ayla Vilela",
+    name: "Ayla Vilela",
     cargo: "DESIGNER",
     image: ayla,
   },
   {
-    nome: "Gustavo Milamonte",
+    name: "Gustavo Milamonte",
     cargo: "DESENVOLVEDOR",
     image: gustavo,
   },
   {
-    nome: "Gabriela Camacho",
+    name: "Gabriela Camacho",
     cargo: "DESIGNER",
     image: gabriela,
   },
   {
-    nome: "Manuella Piva",
+    name: "Manuella Piva",
     cargo: "DESENVOLVEDORA",
     image: manuella,
   },
   {
-    nome: "Maria Vitória Guedes",
+    name: "Maria Vitória Guedes",
     cargo: "DESENVOLVEDORA",
     image: maria,
   },
@@ -50,4 +50,31 @@ export default function Equipe() {
           Construímos o Streamix porque queríamos uma plataforma que
           tratasse filmes com a seriedade que eles merecem.
         </p>
+      </div>
+
+            <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {equipe.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#15151f] border border-[#292a35] rounded-sm overflow-hidden hover:scale-[1.02] transition"
+          >
+            <div className="w-full h-[340px] bg-[#20212a]">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+          <div className="p-6">
+              <h2 className="text-xl font-bold text-white">
+                {item.name}
+              </h2>
+
+              <p className="text-blue-500 text-xs font-bold tracking-[1px] mt-2">
+                {item.cargo}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
