@@ -40,5 +40,4 @@ function Contato() {
     </main>
   )
 }
-
 export default Contato
