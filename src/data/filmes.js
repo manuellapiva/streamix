@@ -1,3 +1,16 @@
+import genteGrande from "../assets/gente_grande.jpg";
+import esposaDeMentirinha from "../assets/esposa_de_mentirinha.jpg";
+import vingadoresUltimato from "../assets/vingadores_ultimato.jpeg";
+import superman from "../assets/superman.jpg";
+import diarioDeUmaPaixao from "../assets/diario_de_uma_paixao.webp";
+import it from "../assets/it.jpg";
+import telefonePreto from "../assets/telefone_preto.jpg";
+import walle from "../assets/walle.jpg";
+import interstellar from "../assets/interstellar.png";
+import devoradorDeEstrelas from "../assets/devorador_de_estrelas.jfif";
+import odisseia from "../assets/odisseia.webp";
+import homemAranha from "../assets/homem_aranha.jpg";
+
 const movies = [
   {
     id: 1,
@@ -6,10 +19,9 @@ const movies = [
     duration: "1h 42min",
     rating: 6.0,
     genres: ["Comédia"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: genteGrande,
     description:
-      "Cinco amigos de infância se reencontram anos depois para passar um fim de semana juntos com suas famílias, revivendo antigas amizades e confusões."
+      "Cinco amigos de infância se reencontram anos depois para passar um fim de semana juntos com suas famílias, revivendo antigas amizades e confusões.",
   },
 
   {
@@ -19,10 +31,9 @@ const movies = [
     duration: "1h 57min",
     rating: 6.4,
     genres: ["Comédia", "Romance"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: esposaDeMentirinha,
     description:
-      "Um cirurgião plástico convence sua assistente a fingir ser sua esposa para esconder uma mentira, mas a situação acaba ficando muito mais complicada."
+      "Um cirurgião plástico convence sua assistente a fingir ser sua esposa para esconder uma mentira, mas a situação acaba ficando muito mais complicada.",
   },
 
   {
@@ -32,10 +43,9 @@ const movies = [
     duration: "3h 01min",
     rating: 8.2,
     genres: ["Ação", "Aventura", "Sci-Fi"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: vingadoresUltimato,
     description:
-      "Após acontecimentos devastadores, os Vingadores restantes precisam encontrar uma maneira de reverter as consequências e enfrentar novamente seu maior inimigo."
+      "Após acontecimentos devastadores, os Vingadores restantes precisam encontrar uma maneira de reverter as consequências e enfrentar novamente seu maior inimigo.",
   },
 
   {
@@ -45,10 +55,9 @@ const movies = [
     duration: "2h 09min",
     rating: 7.5,
     genres: ["Ação", "Aventura", "Sci-Fi"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: superman,
     description:
-      "Um novo capítulo da história do Superman acompanha o herói enquanto ele tenta equilibrar sua origem extraterrestre com sua vida na Terra."
+      "Um novo capítulo da história do Superman acompanha o herói enquanto ele tenta equilibrar sua origem extraterrestre com sua vida na Terra.",
   },
 
   {
@@ -58,10 +67,9 @@ const movies = [
     duration: "2h 03min",
     rating: 7.8,
     genres: ["Drama", "Romance"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: diarioDeUmaPaixao,
     description:
-      "Um homem lê para uma mulher uma história de amor marcada pelas diferenças sociais, pelo tempo e por uma ligação que permanece mesmo diante das dificuldades."
+      "Um homem lê para uma mulher uma história de amor marcada pelas diferenças sociais, pelo tempo e por uma ligação que permanece mesmo diante das dificuldades.",
   },
 
   {
@@ -71,23 +79,21 @@ const movies = [
     duration: "2h 15min",
     rating: 7.3,
     genres: ["Terror", "Suspense"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: it,
     description:
-      "Um grupo de crianças enfrenta uma entidade sobrenatural que assume a forma de seus maiores medos e aterroriza uma pequena cidade."
+      "Um grupo de crianças enfrenta uma entidade sobrenatural que assume a forma de seus maiores medos e aterroriza uma pequena cidade.",
   },
 
   {
     id: 7,
-    title: "Telefone Preto",
+    title: "O Telefone Preto",
     year: 2021,
     duration: "1h 43min",
     rating: 7.0,
     genres: ["Terror", "Suspense"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: telefonePreto,
     description:
-      "Um garoto sequestrado encontra um telefone misterioso que começa a receber chamadas de vítimas anteriores de seu sequestrador."
+      "Um garoto sequestrado encontra um telefone misterioso que começa a receber chamadas de vítimas anteriores de seu sequestrador.",
   },
 
   {
@@ -96,11 +102,10 @@ const movies = [
     year: 2008,
     duration: "1h 38min",
     rating: 8.4,
-    genres: ["Animação", "Aventura", "Sci-Fi"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    genres: ["Aventura", "Sci-Fi"],
+    image: walle,
     description:
-      "Em um futuro distante, um pequeno robô responsável por limpar a Terra abandonada encontra uma nova companhia e acaba descobrindo uma missão que pode mudar o destino da humanidade."
+      "Em um futuro distante, um pequeno robô responsável por limpar a Terra abandonada encontra uma nova companhia e acaba descobrindo uma missão que pode mudar o destino da humanidade.",
   },
 
   {
@@ -110,10 +115,9 @@ const movies = [
     duration: "2h 49min",
     rating: 8.7,
     genres: ["Sci-Fi", "Drama", "Aventura"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: interstellar,
     description:
-      "Com a Terra enfrentando uma crise ambiental, um grupo de exploradores parte em uma missão através de um buraco de minhoca em busca de um novo lar para a humanidade."
+      "Com a Terra enfrentando uma crise ambiental, um grupo de exploradores parte em uma missão através de um buraco de minhoca em busca de um novo lar para a humanidade.",
   },
 
   {
@@ -123,23 +127,21 @@ const movies = [
     duration: "2h 02min",
     rating: 7.6,
     genres: ["Sci-Fi", "Aventura"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: devoradorDeEstrelas,
     description:
-      "Uma ameaça misteriosa surge no espaço e começa a consumir fontes de energia estelar, colocando diferentes mundos em risco."
+      "Uma ameaça misteriosa surge no espaço e começa a consumir fontes de energia estelar, colocando diferentes mundos em risco.",
   },
 
   {
     id: 11,
-    title: "Odisseia",
+    title: "A Odisseia",
     year: 2026,
     duration: "2h 49min",
     rating: 8.0,
-    genres: ["Aventura", "Drama", "História"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    genres: ["Aventura", "Drama"],
+    image: odisseia,
     description:
-      "Após a Guerra de Troia, um herói inicia uma longa jornada de volta para casa enfrentando criaturas, deuses e desafios que colocam sua determinação à prova."
+      "Após a Guerra de Troia, um herói inicia uma longa jornada de volta para casa enfrentando criaturas, deuses e desafios que colocam sua determinação à prova.",
   },
 
   {
@@ -149,11 +151,10 @@ const movies = [
     duration: "2h 01min",
     rating: 7.4,
     genres: ["Ação", "Aventura", "Sci-Fi"],
-    image:
-      "https://image.tmdb.org/t/p/w500/",
+    image: homemAranha,
     description:
-      "Após ser picado por uma aranha geneticamente modificada, um jovem desenvolve habilidades extraordinárias e decide usá-las para proteger sua cidade."
-  }
+      "Após ser picado por uma aranha geneticamente modificada, um jovem desenvolve habilidades extraordinárias e decide usá-las para proteger sua cidade.",
+  },
 ];
 
 export default movies;
