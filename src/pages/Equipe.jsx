@@ -58,7 +58,7 @@ export default function Equipe() {
           text-align: center;
         }
 
-        .equipe-label {
+        .equipe-subtitulo {
           display: block;
           margin-bottom: 24px;
           color: #4d91ff;
@@ -83,5 +83,14 @@ export default function Equipe() {
           font-size: 16px;
           line-height: 1.6;
         }
-        
+    
+          .equipe-cards {
+          width: 100%;
+          max-width: 1150px;
+          margin: 68px auto 0;
+
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+        }
 
