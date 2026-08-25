@@ -5,6 +5,7 @@ import Filmes from "./pages/Filmes";
 import Detalhes from "./components/Detalhes";
 import Favoritos from './pages/Favoritos'
 import Home from './pages/Home'
+import Header from './components/Header'
 
 export default function App() {
   const [favoritos, setFavoritos] = useState(() => {
@@ -32,6 +33,8 @@ export default function App() {
 
   return (
     <BrowserRouter>
+
+    <Header/>
 
       <Routes>
 
