@@ -9,6 +9,7 @@ import Contato from './pages/Contato'
 import Equipe from './pages/Equipe'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Sobre from './pages/Sobre'
 
 export default function App() {
   const [favoritos, setFavoritos] = useState(() => {

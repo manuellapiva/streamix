@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaPlay, FaStar, FaArrowRight} from "react-icons/fa";
 import imagefundo from "../assets/superman.avif";
 import CardFilme from "../components/CardFilme";
@@ -71,14 +72,14 @@ export default function Home() {
 
             <div className="mt-10 flex flex-wrap gap-4">
 
-              <button className="flex items-center gap-3 rounded-md bg-blue-500 px-6 py-3 text-sm font-medium text-gray-950 transition duration-200 hover:bg-blue-700">
+              <Link to="/filme/4" className="flex items-center gap-3 rounded-md bg-blue-500 px-6 py-3 text-sm font-medium text-gray-950 transition duration-200 hover:bg-blue-700">
                 <FaPlay size={10} />
                 Assistir agora
-              </button>
+              </Link>
 
-              <button className="rounded-md border border-blue-500 px-6 py-3 text-sm font-medium text-blue-500 transition duration-200 hover:bg-blue-700 hover:text-gray-950">
+              <Link to="/filme" className="rounded-md border border-blue-500 px-6 py-3 text-sm font-medium text-blue-500 transition duration-200 hover:bg-blue-700 hover:text-gray-950">
                 Explorar catálogo
-              </button>
+              </Link>
 
             </div>
           </div>
@@ -97,10 +98,10 @@ export default function Home() {
                     </h2> 
                 </div> 
 
-            <button className="flex items-center gap-3 text-sm text-gray-300 transition hover:text-slate-50"> 
+            <Link to="/filme" className="flex items-center gap-3 text-sm text-gray-300 transition hover:text-slate-50"> 
                 Ver todos 
                 <FaArrowRight size={12} /> 
-            </button> 
+            </Link> 
         </div> 
                     
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6"> 
@@ -131,9 +132,9 @@ export default function Home() {
             Explore o catálogo completo, filtre por gênero e organize seus favoritos.
           </p>
 
-          <button className="mt-10 rounded-md bg-blue-500 px-8 py-3.5 text-sm font-medium text-gray-950 transition duration-200 hover:bg-blue-700">
+          <Link to="/filme" className="mt-10 rounded-md bg-blue-500 px-8 py-3.5 text-sm font-medium text-gray-950 transition duration-200 hover:bg-blue-700">
             Explorar o catálogo
-          </button>
+          </Link>
 
         </div>
 

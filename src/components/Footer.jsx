@@ -52,7 +52,7 @@ function Footer() {
 
               <li>
                 <Link
-                  to="/filmes"
+                  to="/filme"
                   className="text-gray-400 text-sm hover:text-blue-500 transition"
                 >
                   Filmes

@@ -46,7 +46,7 @@ export default function Favoritos({ favorites, toggleFavorite }) {
               para encontrá-los aqui.
             </p>
             <Link
-              to="/"
+              to="/filme"
               className="mt-6 rounded bg-blue-500 px-5 py-3 text-sm font-medium text-black transition hover:bg-blue-400">
               Explorar filmes
             </Link>
