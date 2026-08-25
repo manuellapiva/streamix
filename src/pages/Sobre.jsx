@@ -166,9 +166,7 @@ export default function App() {
             ))}
           </div>
         </section>
-        </main>
-
-     
+      </main>
     </div>
   );
 }
