@@ -68,6 +68,7 @@
  | `/sobre` | Sobre o Streamix |
  | `/contato` | Formulário de contato |
  | `/equipe` | Equipe do projeto |
+ | `/*` | Página de Erro |
 
  ## 📁 Estrutura do projeto
 
