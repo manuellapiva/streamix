@@ -10,6 +10,7 @@ import Equipe from './pages/Equipe'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Sobre from './pages/Sobre'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   const [favoritos, setFavoritos] = useState(() => {
@@ -91,7 +92,12 @@ export default function App() {
           path="/equipe"
           element={<Equipe/>}
         />
-      </Routes>
+        
+        <Route
+          path="*"
+          element={<NotFound/>}
+        />
+          </Routes>
       <Footer/>
     </BrowserRouter>
   );
